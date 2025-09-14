@@ -1,21 +1,12 @@
-# Library System
 
-This is a simple library system that allows you to manage books using a flat file database. The system includes functionality for adding, searching, and listing books, as well as unit and integration tests to ensure correctness.
+# Shelf Sense
+Python-based inventory management prototype for retail operations, leveraging SQL for data storage. Inspired by my Retail Business Management Diploma.
 
----
 
 ## Features
-
-- **Add a Book**: Add a new book to the library database.
-- **Search for a Book**: Find a book by its title.
-- **List All Books**: View all books currently in the library.
-- **Flat File Database**: Persistent storage using a `.txt` file.
-- **Unit and Integration Tests**: Verify both individual functions and the entire system.
-
----
-
-
----
+- Track stock levels and generate reports
+- RESTful API for inventory queries
+- Retail-focused design for companies like Takealot and WeBuyCars
 
 ## Prerequisites
 
@@ -24,16 +15,13 @@ This is a simple library system that allows you to manage books using a flat fil
 
 ---
 
-## Setup Instructions
-
-1. Clone the repository or download the project files.
-2. Navigate to the project directory in your terminal.
-3. Ensure all required files are present:
-   - `functions/library_system.py`
-   - `tests/test_library_system.py`
-   - `tests/test_integration.py`
-
+## Setup
+```bash
+git clone https://github.com/LindokuhleKubeka/shelf-sense
+pip install -r requirements.txt
+python main.py
 ---
+
 
 ## Running the Application
 
