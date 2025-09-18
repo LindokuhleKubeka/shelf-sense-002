@@ -1,30 +1,22 @@
-
-# Shelf Sense
-Python-based inventory management prototype for retail operations, leveraging SQL for data storage. Inspired by my Retail Business Management Diploma.
-
+# Shelf-Sense-002
+Flask-based retail inventory API for managing stock (e.g., automotive parts). Adapted from [Osomudeya/side-devops-projects](https://github.com/Osomudeya/side-devops-projects).
 
 ## Features
-- Track stock levels and generate reports
-- RESTful API for inventory queries
-- Retail-focused design for companies like Takealot and WeBuyCars
-
-## Prerequisites
-
-- Python 3.6 or higher
-- A terminal or IDE that supports Python execution
-
----
+- REST API for adding/retrieving stock (POST/GET /stock).
+- SQLite database for inventory persistence.
+- Unit tests with pytest.
 
 ## Setup
-```bash
-git clone https://github.com/LindokuhleKubeka/shelf-sense
-pip install -r requirements.txt
-python main.py
----
+1. Install Python: `sudo apt-get install -y python3 python3-pip python3-venv`
+2. Virtual Env: `python3 -m venv venv && source venv/bin/activate`
+3. Install: `pip install -r requirements.txt`
+4. Run: `python functions/app.py`
+5. Test: `curl http://localhost:5000/stock -X POST -H "Content-Type: application/json" -d '{"item": "Toyota Camry", "quantity": 5}'`
+6. Run Tests: `python -m pytest tests/test_app.py`
+7. Docker: `docker build -t shelf-sense . && docker run -p 5000:5000 shelf-sense`
 
+## Technologies
+- Flask, SQLite, Docker, pytest
 
-## Running the Application
-
-1. Run the `library_system.py` functions manually or ...
-2. run main.py entry point to call the functions interactively.
-
+## License
+MIT
